@@ -44,7 +44,7 @@ The Simon Game is a classic pattern-matching memory game. The game generates a r
 
 2. **Navigate to the project directory:**
    ```bash
-   cd simon-game
+   cd SimonGame
 
 ## 👤 Author
 
