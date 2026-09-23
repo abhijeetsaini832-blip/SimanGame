@@ -13,7 +13,7 @@ The Simon Game is a classic pattern-matching memory game. The game generates a r
 ## ✨ Features
 
 - ⚡ **Dynamic Sequence Generation:** Randomly generated patterns that expand after each successful level.
-- ❌ **Game Over Feedback:** Screen flash animation and failure sound effect when a wrong sequence is entered.
+- ❌ **Game Over Feedback:** Screen flash animation when a wrong sequence is entered.
 - 📱 **Responsive UI:** Clean, intuitive interface playable across modern browsers and devices.
 
 ---
