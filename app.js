@@ -65,14 +65,14 @@ function levelUp(){
 function checkAns(idx) {
     if(userSeq[idx] === gameSeq[idx]){
         if(userSeq.length == gameSeq.length){
-            setTimeout(levelUp(), 1000);
+            setTimeout(levelUp(), 1100);
         }
     }else{
         h2.innerText = "Please try again for boost your Score";
         h3.innerHTML = `<h2>Game over!</h2> <br> Your score was <b>${level}</b> <br> Press any key to start`;
         document.querySelector("body").style.backgroundColor ="red";
         setTimeout(function(){
-            document.querySelector("body").style.backgroundColor = "white";
+            document.querySelector("body").style.backgroundColor = "bisque";
         },150);
         reset();
     }
