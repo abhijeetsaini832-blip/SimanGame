@@ -52,7 +52,7 @@ function userFlash(btn){
 function levelUp(){
     userSeq = [];
     level++;
-    h2.innerText=`Level ${level}`;
+    h3.innerText=`Level ${level}`;
 
     //random btn choose
     let randIdx = Math.floor(Math.random()*4);
@@ -66,7 +66,7 @@ function levelUp(){
 function checkAns(idx) {
     if(userSeq[idx] === gameSeq[idx]){
         if(userSeq.length == gameSeq.length){
-            setTimeout(levelUp(), 1200);
+            setTimeout(levelUp(), 1100);
         }
     }else{
         if(level > highScore){
