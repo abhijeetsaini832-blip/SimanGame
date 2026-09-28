@@ -5,6 +5,7 @@ let btns = ["yellow", "red", "purple", "green"];
 
 let started = false;
 let level = 0;
+let highScore = 0;
 
 let h2 = document.querySelector("h2");
 let h3 = document.querySelector("h3");
@@ -68,8 +69,11 @@ function checkAns(idx) {
             setTimeout(levelUp(), 1100);
         }
     }else{
+        if(level > highScore){
+            highScore = level;
+        }
         h2.innerText = "Please try again for boost your Score";
-        h3.innerHTML = `<h2>Game over!</h2> <br> Your score was <b>${level}</b> <br> Press any key to start`;
+        h3.innerHTML = `<h3><b>Game over!</b></h3> <b>Your Score: ${level}</b> <br> <b>Highest Score: ${highScore}</b> <br> Press any key to start.`;
         document.querySelector("body").style.backgroundColor ="red";
         setTimeout(function(){
             document.querySelector("body").style.backgroundColor = "bisque";
