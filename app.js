@@ -29,7 +29,7 @@ document.addEventListener("touchstart",function(e){
 });
 
 function play(){
-    h2.innerText = "Enjoy Siman Says Game";
+    h2.innerText = "Enjoy Simon Says Game";
 }
 
 function gameFlash(btn){
